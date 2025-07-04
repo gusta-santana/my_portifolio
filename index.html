@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Borges | Front-End, Game Dev.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+
+    <!--Topo do site -->
+
+    <header class="header">
+        <div class="header__content">
+          <div class="header__logo-container">
+              <div class="header__logo-img-cont">
+          <img src="images/gutshub.png" alt="gustavo_logo" class="header__logo-img"/>
+        </div>
+        <span class="header__logo-sub">Gustavo Borges</span>
+      </div>
+        <div class="header__main">
+            <ul class="header__links">
+             <li class="header__link-wrapper">
+               <a href="#home" class="header__link"> Início </a>
+             </li>
+             <li class="header__link-wrapper">
+                <a href="#about" class="header__link">Sobre mim </a>
+             </li>
+             <li class="header__link-wrapper">
+                <a href="#projects" class="header__link"> Projetos </a>
+             </li>
+            </ul>
+            <div class="header__main-ham-menu-cont">
+              <img
+                src="images/nerd_emoji.png"
+                alt="hamburger menu"
+                class="header__main-ham-menu"
+              />
+            </div>
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="#home"> Início </a>
+          </li>
+  
+          <li class="header__sm-menu-link">
+            <a href="#about"> Sobre mim </a>
+          </li>
+  
+          <li class="header__sm-menu-link">
+            <a href="#projects"> Projetos </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+ 
+    <!--Fim do topo.-->
+
+    <!--Início-->
+
+    <section class="home-hero">
+        <div class="home-hero__content">
+          <h1 class="heading-primary">Hello! My name is Gustavo</h1>
+          <div class="home-hero__info">
+            <p class="text-primary">
+              Sou um jovem de 19 anos apaixonado por tecnologia, venha me conhecer!
+            </p>
+          </div>
+          <div class="home-hero__cta">
+            <a href="#projects" class="btn btn--bg">Projetos</a>
+          </div>
+        </div>
+        <div class="home-hero__mouse-scroll-cont">
+          <div class="mouse"></div>
+        </div>
+      </section>
+
+    <!--"Sobre mim"-->
+
+    <section id="about" class="about sec-pad">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main">Sobre mim!</span>
+            <span class="heading-sec__sub">
+              Aqui você encontrará um pouco sobre mim e o que eu faço.
+            </span>
+          </h2>
+          <div class="about__content">
+            <div class="about__content-main">
+              <h3 class="about__content-title">É aqui!</h3>
+              <div class="about__content-details">
+                <p class="about__content-details-para">
+                  Oi! Me chamo
+                  <strong>Gustavo</strong>
+                  e sou um estudante cursando <strong> ciências da computação</strong>. Estou buscando conhecimento em diversas áreas da tecnologia.
+
+                  Dentre minhas experiências pessoais, fiz vários bots de música para o <strong>Discord</strong>, jogos 2D e tenho dezenas de projetos para sites de <strong>apoio educacional</strong>!
+                </p>
+                <p class="about__content-details-para">
+                  Quer conversar comigo? Tem experiência? Eu adoraria receber conselhos!
+                  Segue abaixo meu <strong>LinkedIn</strong>.
+                </p>
+              </div>
+              <a href="https://www.linkedin.com/in/gustavo-sborges/" class="btn btn--med btn--theme dynamicBgClr" target="_blank"
+                >Contato</a
+              >
+            </div>
+            <div class="about__content-skills">
+              <h3 class="about__content-title">Meus Conhecimentos</h3>
+              <div class="skills">
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">JavaScript</div>
+                <div class="skills__skill">GML</div>
+                <div class="skills__skill">Piskel</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--"Projetos"-->
+
+    <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projetos</span>
+        <span class="heading-sec__sub">
+          Aqui estão alguns de meus projetos em andamento.
+        </span>
+      </h2>
+  
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img
+              src="images/kenopsia_menu.png"
+              alt="Software Screenshot"
+              class="projects__row-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Kenopsia</h3>
+            <p class="projects__row-content-desc">
+              Kenopsia é um termo que descreve a sensação de vazio e solidão que se sente ao entrar em um lugar que costumava ser movimentado, mas que agora está abandonado e silencioso.
+            </p>
+            <a
+              href="./project-1.html"
+              class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank"
+              >Acesse</a
+            >
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img
+              src="images/loading.jpg"
+              alt="Software Screenshot"
+              class="projects__row-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Jogo</h3>
+            <p class="projects__row-content-desc">
+              Jogo em andamento.
+            </p>
+            <a
+              href="./project-2.html"
+              class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank"
+              >Acesse</a
+            >
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img
+              src="images/loading.jpg"
+              alt="Software Screenshot"
+              class="projects__row-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Mente Aberta</h3>
+            <p class="projects__row-content-desc">
+              Em andamento.
+            </p>
+            <a
+              href="./project-3.html"
+              class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank"
+              >Acesse</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+    <!--Início do "Footer"-->
+
+    <footer class="main-footer">
+        <div class="main-container">
+            <div class="main-footer__upper">
+              <div class="main-footer__row main-footer__row-1">
+                <h2 class="heading heading-sm main-footer__heading-sm">
+                 <span>Social</span>
+                </h2>
+            <div class="main-footer__social-cont">
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/gustavo-sborges/">
+                    <img class="main-footer__icon" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="icon"/>
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://github.com/gusta-santana">
+                    <img class="main-footer__icon" src="images/github.png" alt="icon"/>
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/gustbrgs/">
+                    <img class="main-footer__icon main-footer__icon--mr-none" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/900px-Instagram_icon.png" alt="icon"/>
+                </a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">Gustavo Borges</h4>
+          <p class="main-footer__short-desc">
+            
+          </p>
+        </div>
+      </div>
+  
+      <div class="main-footer__lower">
+        &copy; Copyright 2021. Made by
+        <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+          >Ram Maheshwari</a
+        >
+      </div>
+    </div>
+    </footer>
+</body>
+</html>

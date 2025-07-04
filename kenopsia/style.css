@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }  
+
+body {
+    background-image: url(images/school.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    min-height: 100vh;  
+}
+
+header {
+    height: 100vh; /* A primeira seção (header) ocupa a tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5vw;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+}
+
+a:hover {
+    font-size: 3vw;
+}
+
+section {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    min-height: 100vh; /* Certificando-se de que o fundo preto ocupe a tela */
+    overflow: hidden;
+}
+
+section main h2 {
+    color: white;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    transform: translate(-45vw, 10vh); /* Substitui top e margin-left */
+    max-width: 100%;
+    text-align: left;
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+}
+
+section main p {
+    color: white;
+    position: relative;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 700px;
+    transform: translate(3vw, 25vh);
+    font-size: 1.5vw;
+}
+
+#liminal01 {
+    width: 40%;
+    height: auto;
+    position: relative;
+    bottom: 100px;
+    left: 800px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 3px gray;
+}
+
+.carrossel-container{
+    display: flex;
+    position: relative;
+    width: auto;
+    min-height: 100vh;
+    gap: 1rem;
+}
+
+.carrossel-slide{
+    position: relative;
+    width: 40%;
+}
+
+.slider{
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.on{
+    opacity: 1;
+}
+
+#prev-button, #next-button{
+    position: relative;
+    top: 150px;
+    width: auto;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button img, #next-button img{
+    width: 100%;
+    height: 100%;
+}
+
+#prev-button{
+    transform: rotate(180deg);
+}
+
+#text2{
+    color: white;
+    position: relative;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 40vw; /* Aproximadamente proporcional ao valor anterior */
+    font-size: 1.3vw;
+    transform: translate(3vw, 10vh); /* Converte os valores de px para vw e vh */
+}
+
+.filme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black;
+    color: white;
+    padding-bottom: 50px;
+    overflow: visible;
+}
+
+#kenopsia_cinema {
+    font-size: 3vw;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 262vh; /*Ajuste o valor conforme necessário */
+    margin-bottom: 0; /* Retira margem desnecessária */
+}
+
+#title_truman {
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 270vh; /* Ajuste o valor conforme necessário */
+    margin-bottom: 0; /* Retira margem desnecessária */
+}
+
+.desc01_truman{
+    font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 700px;
+    position: relative;
+    margin-top: -100px;
+}
+
+.img_truman {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 4px 4px 3px gray;
+}
+
+.desc02_truman {
+    font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 700px;
+    position: relative;
+}
+
+#title_vivarium {
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 380vh; /* Ajuste o valor conforme necessário */
+    margin-bottom: 0; /* Retira margem desnecessária */
+}
+
+.desc01_vivarium{
+    font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 700px;
+    position: relative;
+    margin-top: 210px;
+}
+
+.img_vivarium {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 4px 4px 3px gray;
+}
+
+.desc02_vivarium {
+    font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 700px;
+    position: relative;
+}
+
+
+#title_iluminado {
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 475vh; /* Ajuste o valor conforme necessário */
+    margin-bottom: 0; /* Retira margem desnecessária */
+}
+
+.desc01_iluminado{
+    font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 700px;
+    position: relative;
+    margin-top: 210px;
+}
+
+.img_iluminado {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 4px 4px 3px gray;
+}
+
+.desc02_iluminado {
+    font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 700px;
+    position: relative;
+}
+
